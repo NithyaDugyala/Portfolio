@@ -1,1 +1,215 @@
 # Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithya Dugyala Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #74EBD5, #ACB6E5);
+            color: #333;
+            animation: gradientBG 10s ease infinite;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            background: #333;
+            animation: fadeIn 2s;
+            transition: transform 0.3s;
+            position: relative;
+        }
+        header:hover {
+            transform: scale(1.05);
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 20px auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+        .profile-img:hover {
+            transform: rotate(360deg) scale(1.1);
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: all 0.6s ease-in-out;
+            opacity: 0;
+            transform: translateY(50px) scale(0.9);
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .section:hover {
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+        .projects, .certificates {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .projects a, .certificates a {
+            flex: 1 1 calc(50% - 20px);
+            text-align: center;
+            transition: transform 0.5s;
+        }
+        .projects img, .certificates img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+        .projects img:hover, .certificates img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            animation: fadeIn 2s;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        @keyframes gradientBG {
+            0% { background: linear-gradient(135deg, #74EBD5, #ACB6E5); }
+            50% { background: linear-gradient(135deg, #ACB6E5, #74EBD5); }
+            100% { background: linear-gradient(135deg, #74EBD5, #ACB6E5); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/prifile(cropped version).jpg" alt="Nithya Dugyala" class="profile-img">
+    <h1 id="name">Nithya Dugyala</h1>
+    <p>B.Tech 2nd year CSE (AIML) student | AI & ML Enthusiast</p>
+    <p>📧 <a href="mailto:nithya2004dugyala@gmail.com">nithya2004dugyala@gmail.com</a> | 
+       🔗 <a href="https://www.linkedin.com/in/nithya-dugyala-b828062ab" target="_blank">LinkedIn</a></p>
+</header>
+
+<div class="container">
+    <div class="section skills">
+        <h2>Skills</h2>
+        <ul id="skills-list">
+            <li>Python, JavaScript, HTML, CSS, SQL</li>
+            <li>Machine Learning: SVM, Logistic Regression, Decision Tree, KNN, Random Forest</li>
+            <li>Mathematics: Linear Algebra, Probability, Statistics</li>
+            <li>Soft Skills: Leadership, Time Management, Communication, Logical Thinking, Problem-Solving</li>
+        </ul>
+    </div>
+
+    <div class="section experience">
+        <h2>Experience</h2>
+        <p><strong>Google AI-ML Virtual Internship</strong> (Cohort-9)</p>
+        <p>10-week internship on AI and ML applications, including model training, hyperparameter tuning, and evaluation.</p>
+        <p><strong>Python Intern - Codesoft</strong></p>
+        <p>Developed projects such as a Password Generator and Rock-Paper-Scissors Game.</p>
+    </div>
+
+    <div class="section projects">
+        <h2>Projects</h2>
+        <a href="https://github.com/Nithya/heart-failure-prediction" target="_blank">
+            <h3>Heart Failure Prediction</h3>
+            <img src="images/heart rate image.webp" alt="Heart Failure Prediction">
+        </a>
+        <a href="https://github.com/Nithya/depression-prediction" target="_blank">
+            <h3>Depression Prediction</h3>
+            <img src="images/depression-rate.webp" alt="Depression Prediction">
+        </a> 
+        <a href="https://www.linkedin.com/posts/nithya-dugyala-b828062ab_key-activity-7219717995386867712-1-8W?utm_source=share&utm_medium=member_android&rcm=ACoAAEqxPxIBDoTH5XgM3lRb4cdN5iw6eO2_4Kk" target="_blank">
+            <h3>Password Cracker</h3>
+            <img src="images/password.webp" alt="Depression Prediction">
+        </a> 
+        <a href="https://www.linkedin.com/posts/nithya-dugyala-b828062ab_codesoft-codesoft-activity-7219720755410808833-2Jhu?utm_source=share&utm_medium=member_android&rcm=ACoAAEqxPxIBDoTH5XgM3lRb4cdN5iw6eO2_4Kk" target="_blank">
+            <h3>Rock paper scissor</h3>
+            <img src="images/rock paper scissors.jpg" alt="Depression Prediction">
+        </a>
+    </div>
+
+    <div class="section certifications">
+        <h2>Certifications</h2>
+        <div class="certificates"> 
+            <a href="#" target="_blank">
+                <h3>Microsoft AI Certification</h3>
+                <img src="images/certi-1.jpg" alt="Microsoft AI Certification">
+            </a> 
+            <a href="#" target="_blank">
+                <h3>Microsoft AI Certification</h3>
+                <img src="images/certi-2.jpg" alt="Microsoft AI Certification">
+            </a>
+           
+            <a href="#" target="_blank">
+                <h3>AI-ML Vertual Internship Certification</h3>
+                <img src="images/certi-3.jpg" alt="Udemy Python Certification">
+            </a>
+        </div>
+    </div>
+
+    <div class="section interests">
+        <h2>Interests</h2>
+        <p>Machine Learning, Data Science, Generative AI</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Nithya Dugyala | Portfolio</p>
+</footer>
+
+<script>
+    const nameElement = document.getElementById('name');
+    const nameText = nameElement.textContent;
+    let index = 0;
+
+    function animateText() {
+        nameElement.textContent = nameText.slice(0, index);
+        index++;
+        if (index > nameText.length) {
+            index = 0;
+        }
+        setTimeout(animateText, 200);
+    }
+    animateText();
+
+    window.addEventListener('scroll', () => {
+        document.querySelectorAll('.section').forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (sectionTop < windowHeight - 100) {
+                section.classList.add('visible');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
